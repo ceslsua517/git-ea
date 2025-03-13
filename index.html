@@ -3,51 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CatPhotoApp</title>
 </head>
 <body>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem tempore, rerum laborum dignissimos officia natus saepe delectus cum ratione, neque corporis animi facilis, quia nam alias? Aliquam expedita ipsam delectus.
-   
-        <!-- Simple pop-up dialog box, containing a form -->
-    <dialog id="favDialog">
-        <form method="dialog">
-          <section>
-            <p><label for="favAnimal">Favorite animal:</label>
-            <select id="favAnimal">
-              <option></option>
-              <option>Brine shrimp</option>
-              <option>Red panda</option>
-              <option>Spider monkey</option>
-            </select></p>
-          </section>
-          <menu>
-            <button id="cancel" type="reset">Cancel</button>
-            <button type="submit">Confirm</button>
-          </menu>
-        </form>
-      </dialog>
-      
-      <menu>
-        <button id="updateDetails">Update details</button>
-      </menu>
-      
-      <script>
-        (function() {
-          var updateButton = document.getElementById('updateDetails');
-          var cancelButton = document.getElementById('cancel');
-          var favDialog = document.getElementById('favDialog');
-      
-          // Update button opens a modal dialog
-          updateButton.addEventListener('click', function() {
-            favDialog.showModal();
-          });
-      
-          // Form cancel button closes the dialog box
-          cancelButton.addEventListener('click', function() {
-            favDialog.close();
-          });
-      
-        })();
-      </script>
+    <main>
+        <h1>CatPhotoApp</h1>
+        <section>
+            <h2>Cat Photos</h2>
+            <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute
+                    cats</a> online!</p>
+            <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+            <a href="https://freecatphotoapp.com"><img
+                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    alt="A cute orange cat lying on its back."></a>
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>catnip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate.">
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                    alt="Five cats looking around a field.">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>
+            No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+        </p>
+    </footer>
+
 </body>
 </html>
